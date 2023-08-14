@@ -1,0 +1,451 @@
+# compiler: R8
+# compiler_version: 1.4.77
+# min_api: 19
+com.google.androidgamesdk.ChoreographerCallback$1 -> com.google.androidgamesdk.a:
+com.google.androidgamesdk.SwappyDisplayManager$1 -> com.google.androidgamesdk.b:
+com.google.androidgamesdk.SwappyDisplayManager$a -> com.google.androidgamesdk.SwappyDisplayManager$a:
+    com.google.androidgamesdk.SwappyDisplayManager b -> d
+    java.util.concurrent.locks.Condition d -> c
+    java.util.concurrent.locks.Lock c -> b
+com.unity3d.splash.IUnityAdsListener -> a.a.a.a:
+    void onUnityAdsError(com.unity3d.splash.UnityAds$UnityAdsError,java.lang.String) -> a
+com.unity3d.splash.UnityAds -> a.a.a.b:
+    boolean skipLaunchScreenAds -> a
+    void initialize(android.app.Activity,java.lang.String,com.unity3d.splash.IUnityAdsListener) -> a
+    boolean isSkipLaunchScreenAds() -> a
+    void setSkipLaunchScreenAds(boolean) -> a
+com.unity3d.splash.UnityAds$UnityAdsError -> a.a.a.b$a:
+    com.unity3d.splash.UnityAds$UnityAdsError NOT_INITIALIZED -> a
+    com.unity3d.splash.UnityAds$UnityAdsError INITIALIZE_FAILED -> b
+    com.unity3d.splash.UnityAds$UnityAdsError[] $VALUES -> k
+    com.unity3d.splash.UnityAds$UnityAdsError INIT_SANITY_CHECK_FAIL -> e
+    com.unity3d.splash.UnityAds$UnityAdsError AD_BLOCKER_DETECTED -> f
+    com.unity3d.splash.UnityAds$UnityAdsError INVALID_ARGUMENT -> c
+    com.unity3d.splash.UnityAds$UnityAdsError VIDEO_PLAYER_ERROR -> d
+    com.unity3d.splash.UnityAds$UnityAdsError SHOW_ERROR -> i
+    com.unity3d.splash.UnityAds$UnityAdsError INTERNAL_ERROR -> j
+    com.unity3d.splash.UnityAds$UnityAdsError FILE_IO_ERROR -> g
+    com.unity3d.splash.UnityAds$UnityAdsError DEVICE_ID_ERROR -> h
+com.unity3d.splash.services.IUnityServicesListener -> a.a.a.a.a:
+    void onUnityServicesError(com.unity3d.splash.services.UnityServices$UnityServicesError,java.lang.String) -> a
+com.unity3d.splash.services.UnityServices -> a.a.a.a.b:
+    boolean _configurationInitialized -> a
+    void initialize(android.app.Activity,java.lang.String,com.unity3d.splash.services.IUnityServicesListener,boolean,boolean) -> a
+    boolean isSupported() -> a
+com.unity3d.splash.services.UnityServices$UnityServicesError -> a.a.a.a.b$a:
+    com.unity3d.splash.services.UnityServices$UnityServicesError INIT_SANITY_CHECK_FAIL -> b
+    com.unity3d.splash.services.UnityServices$UnityServicesError INVALID_ARGUMENT -> a
+    com.unity3d.splash.services.UnityServices$UnityServicesError[] $VALUES -> c
+com.unity3d.splash.services.ads.UnityAdsImplementation -> a.a.a.a.a.b:
+    void addListener(com.unity3d.splash.IUnityAdsListener) -> a
+    void initialize(android.app.Activity,java.lang.String,com.unity3d.splash.IUnityAdsListener,boolean,boolean) -> a
+com.unity3d.splash.services.ads.UnityAdsImplementation$1 -> a.a.a.a.a.a:
+    com.unity3d.splash.IUnityAdsListener val$listener -> a
+    void onUnityServicesError(com.unity3d.splash.services.UnityServices$UnityServicesError,java.lang.String) -> a
+com.unity3d.splash.services.ads.properties.AdsProperties -> a.a.a.a.a.a.a:
+    java.util.Set _listeners -> a
+    int _showTimeout -> b
+    void addListener(com.unity3d.splash.IUnityAdsListener) -> a
+com.unity3d.splash.services.core.api.Lifecycle -> a.a.a.a.b.a.a:
+    com.unity3d.splash.services.core.lifecycle.LifecycleListener _listener -> a
+    com.unity3d.splash.services.core.lifecycle.LifecycleListener getLifecycleListener() -> a
+    void setLifecycleListener(com.unity3d.splash.services.core.lifecycle.LifecycleListener) -> a
+com.unity3d.splash.services.core.cache.CacheDirectory -> a.a.a.a.b.b.a:
+    java.io.File _cacheDirectory -> c
+    java.lang.String _cacheDirName -> a
+    com.unity3d.splash.services.core.cache.CacheDirectoryType _type -> d
+    boolean _initialized -> b
+    java.io.File createCacheDirectory(java.io.File,java.lang.String) -> a
+    java.io.File getCacheDirectory(android.content.Context) -> a
+    boolean testCacheDirectory(java.io.File) -> a
+    void createNoMediaFile(java.io.File) -> b
+com.unity3d.splash.services.core.cache.CacheDirectoryType -> a.a.a.a.b.b.b:
+    com.unity3d.splash.services.core.cache.CacheDirectoryType[] $VALUES -> c
+    com.unity3d.splash.services.core.cache.CacheDirectoryType EXTERNAL -> a
+    com.unity3d.splash.services.core.cache.CacheDirectoryType INTERNAL -> b
+com.unity3d.splash.services.core.configuration.Configuration -> a.a.a.a.b.c.a:
+    java.lang.String _webViewUrl -> a
+    java.lang.String[] _moduleConfigurationList -> g
+    java.lang.String _webViewVersion -> c
+    java.lang.String _webViewHash -> b
+    java.util.Map _moduleConfigurations -> f
+    java.lang.Class[] _webAppApiClassList -> h
+    java.lang.String _url -> e
+    java.lang.String _webViewData -> d
+    com.unity3d.splash.services.core.configuration.IModuleConfiguration getModuleConfiguration(java.lang.String) -> a
+    java.lang.String[] getModuleConfigurationList() -> a
+    java.lang.Class[] getWebAppApiClassList() -> b
+    void setConfigUrl(java.lang.String) -> b
+    java.lang.String getWebViewData() -> c
+    void setWebViewData(java.lang.String) -> c
+    java.lang.String getWebViewHash() -> d
+    java.lang.String getWebViewUrl() -> e
+    java.lang.String getWebViewVersion() -> f
+    void makeRequest() -> g
+    void createWebAppApiClassList() -> h
+com.unity3d.splash.services.core.configuration.EnvironmentCheck -> a.a.a.a.b.c.b:
+    boolean hasJavascriptInterface(java.lang.reflect.Method) -> a
+    boolean isEnvironmentOk() -> a
+    boolean testCacheDirectory() -> b
+    boolean testProGuard() -> c
+com.unity3d.splash.services.core.configuration.IModuleConfiguration -> a.a.a.a.b.c.c:
+    java.lang.Class[] getWebAppApiClassList() -> a
+    boolean initErrorState(com.unity3d.splash.services.core.configuration.Configuration,java.lang.String,java.lang.String) -> a
+    boolean initModuleState(com.unity3d.splash.services.core.configuration.Configuration) -> a
+    boolean initCompleteState(com.unity3d.splash.services.core.configuration.Configuration) -> b
+    boolean resetState(com.unity3d.splash.services.core.configuration.Configuration) -> c
+com.unity3d.splash.services.core.configuration.InitializeThread -> a.a.a.a.b.c.e:
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState _state -> b
+    com.unity3d.splash.services.core.configuration.InitializeThread _thread -> a
+    boolean _stopThread -> c
+    void initialize(com.unity3d.splash.services.core.configuration.Configuration) -> a
+com.unity3d.splash.services.core.configuration.InitializeThread$1 -> a.a.a.a.b.c.d:
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState -> a.a.a.a.b.c.e$a:
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateComplete -> a.a.a.a.b.c.e$b:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> a
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateConfig -> a.a.a.a.b.c.e$c:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> d
+    int _maxRetries -> b
+    int _retryDelay -> c
+    int _retries -> a
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateCreate -> a.a.a.a.b.c.e$d:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> a
+    java.lang.String _webViewData -> b
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateError -> a.a.a.a.b.c.e$e:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> c
+    java.lang.String _state -> a
+    java.lang.Exception _exception -> b
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateInitModules -> a.a.a.a.b.c.e$f:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> a
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateLoadCache -> a.a.a.a.b.c.e$g:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> a
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateLoadWeb -> a.a.a.a.b.c.e$h:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> a
+    int _retryDelay -> d
+    int _retries -> b
+    int _maxRetries -> c
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateNetworkError -> a.a.a.a.b.c.e$i:
+    android.os.ConditionVariable _conditionVariable -> g
+    long _lastConnectedEventTimeMs -> e
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState _erroredState -> f
+    int _receivedConnectedEvents -> d
+    void onDisconnected() -> a
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+    boolean shouldHandleConnectedEvent() -> c
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateReset -> a.a.a.a.b.c.e$j:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> a
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+    void unregisterLifecycleCallbacks() -> c
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateReset$1 -> a.a.a.a.b.c.f:
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateReset this$0 -> c
+    android.os.ConditionVariable val$cv -> b
+    com.unity3d.splash.services.core.webview.WebViewApp val$currentApp -> a
+com.unity3d.splash.services.core.configuration.InitializeThread$InitializeStateRetry -> a.a.a.a.b.c.e$k:
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState _state -> a
+    int _delay -> b
+    com.unity3d.splash.services.core.configuration.InitializeThread$InitializeState execute() -> b
+com.unity3d.splash.services.core.connectivity.ConnectivityChangeReceiver -> a.a.a.a.b.d.a:
+    com.unity3d.splash.services.core.connectivity.ConnectivityChangeReceiver _receiver -> a
+    void register() -> a
+    void unregister() -> b
+com.unity3d.splash.services.core.connectivity.ConnectivityEvent -> a.a.a.a.b.d.b:
+    com.unity3d.splash.services.core.connectivity.ConnectivityEvent[] $VALUES -> d
+    com.unity3d.splash.services.core.connectivity.ConnectivityEvent DISCONNECTED -> b
+    com.unity3d.splash.services.core.connectivity.ConnectivityEvent NETWORK_CHANGE -> c
+    com.unity3d.splash.services.core.connectivity.ConnectivityEvent CONNECTED -> a
+com.unity3d.splash.services.core.connectivity.ConnectivityMonitor -> a.a.a.a.b.d.d:
+    java.util.HashSet _listeners -> f
+    int _networkType -> e
+    boolean _listening -> b
+    boolean _webappMonitoring -> c
+    int _connected -> a
+    boolean _wifi -> d
+    void addListener(com.unity3d.splash.services.core.connectivity.IConnectivityListener) -> a
+    void connected() -> a
+    void sendToWebview(com.unity3d.splash.services.core.connectivity.ConnectivityEvent,boolean,int) -> a
+    void connectionStatusChanged() -> b
+    void removeListener(com.unity3d.splash.services.core.connectivity.IConnectivityListener) -> b
+    void disconnected() -> c
+    void initConnectionStatus() -> d
+    void startListening() -> e
+    void stopListening() -> f
+    void updateListeningStatus() -> g
+com.unity3d.splash.services.core.connectivity.ConnectivityMonitor$1 -> a.a.a.a.b.d.c:
+    int[] $SwitchMap$com$unity3d$splash$services$core$connectivity$ConnectivityEvent -> a
+com.unity3d.splash.services.core.connectivity.ConnectivityNetworkCallback -> a.a.a.a.b.d.e:
+    com.unity3d.splash.services.core.connectivity.ConnectivityNetworkCallback _impl -> a
+    void register() -> a
+    void unregister() -> b
+com.unity3d.splash.services.core.connectivity.IConnectivityListener -> a.a.a.a.b.d.f:
+    void onDisconnected() -> a
+com.unity3d.splash.services.core.device.Device -> a.a.a.a.b.e.a:
+    java.lang.String getSIMMCC(android.content.Context) -> a
+    java.lang.String getUniqueEventId() -> a
+com.unity3d.splash.services.core.device.Storage -> a.a.a.a.b.e.b:
+    com.unity3d.splash.services.core.device.StorageManager$StorageType _type -> c
+    java.lang.String _targetFileName -> b
+    com.unity3d.splash.services.core.device.StorageManager$StorageType getType() -> c
+    boolean initStorage() -> d
+    boolean readStorage() -> e
+    boolean storageFileExists() -> f
+    boolean writeStorage() -> g
+com.unity3d.splash.services.core.device.StorageManager -> a.a.a.a.b.e.c:
+    java.util.Map _storageFileMap -> a
+    java.util.List _storages -> b
+    void addStorageLocation(com.unity3d.splash.services.core.device.StorageManager$StorageType,java.lang.String) -> a
+    com.unity3d.splash.services.core.device.Storage getStorage(com.unity3d.splash.services.core.device.StorageManager$StorageType) -> a
+    boolean init(android.content.Context) -> a
+    boolean hasStorage(com.unity3d.splash.services.core.device.StorageManager$StorageType) -> b
+    void initStorage(com.unity3d.splash.services.core.device.StorageManager$StorageType) -> c
+    boolean setupStorage(com.unity3d.splash.services.core.device.StorageManager$StorageType) -> d
+com.unity3d.splash.services.core.device.StorageManager$StorageType -> a.a.a.a.b.e.c$a:
+    com.unity3d.splash.services.core.device.StorageManager$StorageType[] $VALUES -> c
+    com.unity3d.splash.services.core.device.StorageManager$StorageType PRIVATE -> a
+    com.unity3d.splash.services.core.device.StorageManager$StorageType PUBLIC -> b
+com.unity3d.splash.services.core.lifecycle.LifecycleListener -> a.a.a.a.b.f.a:
+com.unity3d.splash.services.core.log.DeviceLog -> a.a.a.a.b.g.b:
+    boolean FORCE_DEBUG_LOG -> e
+    boolean LOG_ERROR -> a
+    java.util.HashMap _deviceLogLevel -> f
+    boolean LOG_WARNING -> b
+    boolean LOG_INFO -> c
+    boolean LOG_DEBUG -> d
+    com.unity3d.splash.services.core.log.DeviceLogEntry createLogEntry(com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel,java.lang.String) -> a
+    void debug(java.lang.String) -> a
+    void entered() -> a
+    void exception(java.lang.String,java.lang.Exception) -> a
+    com.unity3d.splash.services.core.log.DeviceLogLevel getLogLevel(com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel) -> a
+    void setLogLevel(int) -> a
+    void writeToLog(com.unity3d.splash.services.core.log.DeviceLogEntry) -> a
+    void error(java.lang.String) -> b
+    void write(com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel,java.lang.String) -> b
+    void info(java.lang.String) -> c
+    void warning(java.lang.String) -> d
+    java.lang.String checkMessage(java.lang.String) -> e
+com.unity3d.splash.services.core.log.DeviceLog$1 -> a.a.a.a.b.g.a:
+    int[] $SwitchMap$com$unity3d$splash$services$core$log$DeviceLog$UnityAdsLogLevel -> a
+com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel -> a.a.a.a.b.g.b$a:
+    com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel ERROR -> d
+    com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel WARNING -> c
+    com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel DEBUG -> b
+    com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel[] $VALUES -> e
+    com.unity3d.splash.services.core.log.DeviceLog$UnityAdsLogLevel INFO -> a
+com.unity3d.splash.services.core.log.DeviceLogEntry -> a.a.a.a.b.g.c:
+    java.lang.StackTraceElement _stackTraceElement -> c
+    com.unity3d.splash.services.core.log.DeviceLogLevel _logLevel -> a
+    java.lang.String _originalMessage -> b
+    com.unity3d.splash.services.core.log.DeviceLogLevel getLogLevel() -> a
+    java.lang.String getParsedMessage() -> b
+com.unity3d.splash.services.core.log.DeviceLogLevel -> a.a.a.a.b.g.d:
+    java.lang.String _receivingMethodName -> a
+    java.lang.String getLogTag() -> a
+    java.lang.String getReceivingMethodName() -> b
+com.unity3d.splash.services.core.misc.JsonStorage -> a.a.a.a.b.h.a:
+    org.json.JSONObject _data -> a
+    boolean delete(java.lang.String) -> a
+    org.json.JSONObject getData() -> a
+    void setData(org.json.JSONObject) -> a
+    java.lang.Object get(java.lang.String) -> b
+    boolean initData() -> b
+    java.lang.Object findObject(java.lang.String) -> c
+    java.lang.String getParentObjectTreeFor(java.lang.String) -> d
+com.unity3d.splash.services.core.misc.Utilities -> a.a.a.a.b.h.b:
+    java.lang.String Sha256(java.lang.String) -> a
+    java.lang.String Sha256(byte[]) -> a
+    byte[] readFileBytes(java.io.File) -> a
+    void runOnUiThread(java.lang.Runnable) -> a
+    void runOnUiThread(java.lang.Runnable,long) -> a
+    boolean writeFile(java.io.File,java.lang.String) -> a
+    java.lang.String toHexString(byte[]) -> b
+com.unity3d.splash.services.core.misc.ViewUtilities -> a.a.a.a.b.h.c:
+    void setBackground(android.view.View,android.graphics.drawable.Drawable) -> a
+com.unity3d.splash.services.core.properties.ClientProperties -> a.a.a.a.b.i.a:
+    android.app.Application _application -> c
+    android.content.Context _applicationContext -> b
+    javax.security.auth.x500.X500Principal DEBUG_CERT -> a
+    java.lang.String _gameId -> d
+    android.app.Application getApplication() -> a
+    void setApplication(android.app.Application) -> a
+    void setApplicationContext(android.content.Context) -> a
+    void setGameId(java.lang.String) -> a
+    android.content.Context getApplicationContext() -> b
+    java.lang.String getGameId() -> c
+com.unity3d.splash.services.core.properties.SdkProperties -> a.a.a.a.b.i.b:
+    com.unity3d.splash.services.IUnityServicesListener _listener -> d
+    com.unity3d.splash.services.core.cache.CacheDirectory _cacheDirectory -> b
+    boolean _initialized -> e
+    boolean _testMode -> f
+    java.lang.String _configUrl -> a
+    boolean _perPlacementLoadEnabled -> g
+    long _initializationTime -> c
+    boolean _debugMode -> h
+    java.io.File getCacheDirectory() -> a
+    java.io.File getCacheDirectory(android.content.Context) -> a
+    java.lang.String getDefaultConfigUrl(java.lang.String) -> a
+    void setCacheDirectory(com.unity3d.splash.services.core.cache.CacheDirectory) -> a
+    void setDebugMode(boolean) -> a
+    void setInitializationTime(long) -> a
+    void setListener(com.unity3d.splash.services.IUnityServicesListener) -> a
+    java.lang.String getConfigUrl() -> b
+    void setInitialized(boolean) -> b
+    boolean getDebugMode() -> c
+    void setPerPlacementLoadEnabled(boolean) -> c
+    java.lang.String getLocalStorageFilePrefix() -> d
+    void setTestMode(boolean) -> d
+    java.lang.String getLocalWebViewFile() -> e
+    int getVersionCode() -> f
+    java.lang.String getVersionName() -> g
+com.unity3d.splash.services.core.request.IWebRequestProgressListener -> a.a.a.a.b.j.a:
+    void onRequestProgress(java.lang.String,long,long) -> a
+    void onRequestStart(java.lang.String,long,int,java.util.Map) -> a
+com.unity3d.splash.services.core.request.NetworkIOException -> a.a.a.a.b.j.b:
+com.unity3d.splash.services.core.request.WebRequest -> a.a.a.a.b.j.c:
+    java.util.Map _headers -> d
+    int _readTimeout -> j
+    java.net.URL _url -> a
+    long _contentLength -> g
+    int _connectTimeout -> i
+    int _responseCode -> f
+    com.unity3d.splash.services.core.request.IWebRequestProgressListener _progressListener -> k
+    boolean _canceled -> h
+    java.lang.String _body -> c
+    java.util.Map _responseHeaders -> e
+    java.lang.String _requestType -> b
+    java.lang.String getBody() -> a
+    long makeStreamRequest(java.io.OutputStream) -> a
+    void setBody(java.lang.String) -> a
+    int getConnectTimeout() -> b
+    java.util.Map getHeaders() -> c
+    java.lang.String getQuery() -> d
+    int getReadTimeout() -> e
+    java.lang.String getRequestType() -> f
+    int getResponseCode() -> g
+    java.net.URL getUrl() -> h
+    boolean isCanceled() -> i
+    java.lang.String makeRequest() -> j
+    java.net.HttpURLConnection getHttpUrlConnectionWithHeaders() -> k
+com.unity3d.splash.services.core.request.WebRequest$RequestType -> a.a.a.a.b.j.c$a:
+    com.unity3d.splash.services.core.request.WebRequest$RequestType POST -> a
+    com.unity3d.splash.services.core.request.WebRequest$RequestType GET -> b
+    com.unity3d.splash.services.core.request.WebRequest$RequestType HEAD -> c
+    com.unity3d.splash.services.core.request.WebRequest$RequestType[] $VALUES -> d
+com.unity3d.splash.services.core.webview.WebView -> a.a.a.a.b.k.a:
+    java.lang.reflect.Method _evaluateJavascript -> a
+    java.lang.reflect.Method access$000() -> a
+    void invokeJavascript(java.lang.String) -> a
+com.unity3d.splash.services.core.webview.WebView$JavaScriptInvocation -> a.a.a.a.b.k.a$a:
+    com.unity3d.splash.services.core.webview.WebView this$0 -> c
+    java.lang.String _jsString -> a
+    android.webkit.WebView _webView -> b
+com.unity3d.splash.services.core.webview.WebViewApp -> a.a.a.a.b.k.c:
+    com.unity3d.splash.services.core.configuration.Configuration _configuration -> e
+    com.unity3d.splash.services.core.webview.WebView _webView -> d
+    boolean _initialized -> g
+    android.os.ConditionVariable _conditionVariable -> b
+    java.util.HashMap _nativeCallbacks -> f
+    com.unity3d.splash.services.core.webview.WebViewApp _currentApp -> a
+    boolean _webAppLoaded -> c
+    android.os.ConditionVariable access$300() -> a
+    boolean create(com.unity3d.splash.services.core.configuration.Configuration) -> a
+    com.unity3d.splash.services.core.webview.bridge.NativeCallback getCallback(java.lang.String) -> a
+    boolean invokeCallback(com.unity3d.splash.services.core.webview.bridge.Invocation) -> a
+    void invokeJavascriptMethod(java.lang.String,java.lang.String,org.json.JSONArray) -> a
+    void removeCallback(com.unity3d.splash.services.core.webview.bridge.NativeCallback) -> a
+    boolean sendEvent(java.lang.Enum,java.lang.Enum,java.lang.Object[]) -> a
+    void setCurrentApp(com.unity3d.splash.services.core.webview.WebViewApp) -> a
+    void setWebAppInitialized(boolean) -> a
+    void setWebView(com.unity3d.splash.services.core.webview.WebView) -> a
+    com.unity3d.splash.services.core.configuration.Configuration getConfiguration() -> b
+    void setConfiguration(com.unity3d.splash.services.core.configuration.Configuration) -> b
+    void setWebAppLoaded(boolean) -> b
+    com.unity3d.splash.services.core.webview.WebViewApp getCurrentApp() -> c
+    com.unity3d.splash.services.core.webview.WebView getWebView() -> d
+    boolean isWebAppLoaded() -> e
+com.unity3d.splash.services.core.webview.WebViewApp$1 -> a.a.a.a.b.k.b:
+    com.unity3d.splash.services.core.configuration.Configuration val$configuration -> a
+com.unity3d.splash.services.core.webview.WebViewApp$WebAppChromeClient -> a.a.a.a.b.k.c$a:
+    com.unity3d.splash.services.core.webview.WebViewApp this$0 -> a
+com.unity3d.splash.services.core.webview.WebViewApp$WebAppClient -> a.a.a.a.b.k.c$b:
+    com.unity3d.splash.services.core.webview.WebViewApp this$0 -> a
+com.unity3d.splash.services.core.webview.WebViewEventCategory -> a.a.a.a.b.k.d:
+    com.unity3d.splash.services.core.webview.WebViewEventCategory BANNER -> b
+    com.unity3d.splash.services.core.webview.WebViewEventCategory VIDEOPLAYER -> c
+    com.unity3d.splash.services.core.webview.WebViewEventCategory REQUEST -> d
+    com.unity3d.splash.services.core.webview.WebViewEventCategory RESOLVE -> e
+    com.unity3d.splash.services.core.webview.WebViewEventCategory ADUNIT -> a
+    com.unity3d.splash.services.core.webview.WebViewEventCategory LOAD_API -> r
+    com.unity3d.splash.services.core.webview.WebViewEventCategory[] $VALUES -> s
+    com.unity3d.splash.services.core.webview.WebViewEventCategory ANALYTICS -> n
+    com.unity3d.splash.services.core.webview.WebViewEventCategory AR -> o
+    com.unity3d.splash.services.core.webview.WebViewEventCategory PERMISSIONS -> p
+    com.unity3d.splash.services.core.webview.WebViewEventCategory STORE -> q
+    com.unity3d.splash.services.core.webview.WebViewEventCategory LIFECYCLE -> j
+    com.unity3d.splash.services.core.webview.WebViewEventCategory DEVICEINFO -> k
+    com.unity3d.splash.services.core.webview.WebViewEventCategory WEBPLAYER -> l
+    com.unity3d.splash.services.core.webview.WebViewEventCategory PURCHASING -> m
+    com.unity3d.splash.services.core.webview.WebViewEventCategory CACHE -> f
+    com.unity3d.splash.services.core.webview.WebViewEventCategory CONNECTIVITY -> g
+    com.unity3d.splash.services.core.webview.WebViewEventCategory STORAGE -> h
+    com.unity3d.splash.services.core.webview.WebViewEventCategory BROADCAST -> i
+com.unity3d.splash.services.core.webview.bridge.CallbackStatus -> a.a.a.a.b.k.a.a:
+    com.unity3d.splash.services.core.webview.bridge.CallbackStatus ERROR -> b
+    com.unity3d.splash.services.core.webview.bridge.CallbackStatus OK -> a
+    com.unity3d.splash.services.core.webview.bridge.CallbackStatus[] $VALUES -> c
+com.unity3d.splash.services.core.webview.bridge.Invocation -> a.a.a.a.b.k.a.b:
+    java.util.Map _invocationSets -> b
+    java.util.concurrent.atomic.AtomicInteger _idCount -> a
+    java.util.ArrayList _responses -> d
+    int _invocationId -> e
+    java.util.ArrayList _invocations -> c
+    void addInvocation(java.lang.String,java.lang.String,java.lang.Object[],com.unity3d.splash.services.core.webview.bridge.WebViewCallback) -> a
+    int getId() -> a
+    com.unity3d.splash.services.core.webview.bridge.Invocation getInvocationById(int) -> a
+    void setInvocationResponse(com.unity3d.splash.services.core.webview.bridge.CallbackStatus,java.lang.Enum,java.lang.Object[]) -> a
+    java.util.ArrayList getResponses() -> b
+    boolean nextInvocation() -> c
+    void sendInvocationCallback() -> d
+com.unity3d.splash.services.core.webview.bridge.NativeCallback -> a.a.a.a.b.k.a.c:
+    java.util.concurrent.atomic.AtomicInteger _callbackCount -> a
+    java.lang.String _id -> c
+    java.lang.reflect.Method _callback -> b
+    java.lang.String getId() -> a
+    void invoke(java.lang.String,java.lang.Object[]) -> a
+com.unity3d.splash.services.core.webview.bridge.WebViewBridge -> a.a.a.a.b.k.a.d:
+    java.util.HashMap _classTable -> a
+    java.lang.Class[] getTypes(java.lang.Object[]) -> a
+    java.lang.Object[] getValues(java.lang.Object[],com.unity3d.splash.services.core.webview.bridge.WebViewCallback) -> a
+    void handleCallback(java.lang.String,java.lang.String,java.lang.Object[]) -> a
+    void handleInvocation(java.lang.String,java.lang.String,java.lang.Object[],com.unity3d.splash.services.core.webview.bridge.WebViewCallback) -> a
+    void setClassTable(java.lang.Class[]) -> a
+    java.lang.reflect.Method findMethod(java.lang.String,java.lang.String,java.lang.Object[]) -> b
+com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError -> a.a.a.a.b.k.a.e:
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError CLASS_NOT_EXPOSED -> b
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError GETALLOWEDMETHODS_NOT_FOUND -> c
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError GETALLOWEDMETHODS_INVOCATION_FAILED -> d
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError METHOD_NOT_FOUND -> e
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError CLASS_NOT_FOUND -> a
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError INVOCATION_FAILED -> j
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError[] $VALUES -> k
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError METHOD_UNALLOWED -> f
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError DATA_JSON_PARSE_FAILED -> g
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError DATA_GET_PARAMETER_VALUE_FAILED -> h
+    com.unity3d.splash.services.core.webview.bridge.WebViewBridgeError DATA_PARAMETER_NULL -> i
+com.unity3d.splash.services.core.webview.bridge.WebViewBridgeInterface -> a.a.a.a.b.k.a.f:
+    java.lang.Object[] getParameters(org.json.JSONArray) -> a
+com.unity3d.splash.services.core.webview.bridge.WebViewCallback -> a.a.a.a.b.k.a.h:
+    boolean _invoked -> a
+    int _invocationId -> b
+    java.lang.String _callbackId -> c
+    void error(java.lang.Enum,java.lang.Object[]) -> a
+    int getInvocationId() -> a
+    void invoke(com.unity3d.splash.services.core.webview.bridge.CallbackStatus,java.lang.Enum,java.lang.Object[]) -> a
+com.unity3d.splash.services.core.webview.bridge.WebViewCallback$1 -> a.a.a.a.b.k.a.g:
+com.unity3d.splash.services.core.webview.bridge.WebViewExposed -> a.a.a.a.b.k.a.i:
